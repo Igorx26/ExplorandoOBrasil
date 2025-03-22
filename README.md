@@ -60,4 +60,4 @@ O arquivo `global.css` contém estilos personalizados, como:
 
 ### 📄 Licença
 
-Este projeto está sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais detalhes.
+Este projeto está sob a licença **MIT** - acesse os detalhes [LICENSE.md](https://github.com/Igorx26/ExplorandoOBrasil/blob/main/LICENSE).
