@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contato - Explorando o Brasil</title>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100 flex flex-col">
+      <header class="bg-[#267365] text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+          <h1 class="text-3xl font-bold">Explorando o Brasil</h1>
+
+          <div class="menuIcon cursor-pointer md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+
+          <nav class="navbar hidden md:block">
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <li class="mb-0 mr-0">
+                <a id="home" href="../index.html" class="hover:text-[#F2CB05]">Home</a>
+              </li>
+              <li>
+                <a id="norte" href="../pages/norte.html" class="hover:text-[#F2CB05]">Norte</a>
+              </li>
+              <li>
+                <a id="nordeste" href="../pages/nordeste.html" class="hover:text-[#F2CB05]">Nordeste</a>
+              </li>
+              <li>
+                <a id="centroOeste" href="../pages/centroOeste.html" class="hover:text-[#F2CB05]">Centro-Oeste</a>
+              </li>
+              <li>
+                <a id="sudeste" href="../pages/sudeste.html" class="hover:text-[#F2CB05]">Sudeste</a>
+              </li>
+              <li>
+                <a id="sul" href="../pages/sul.html" class="hover:text-[#F2CB05]">Sul</a>
+              </li>
+              <li>
+                <a id="contato" href="../pages/contato.html" class="hover:text-[#F2CB05] ativo">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="p-4 flex-1">
+        <h2 class="flex justify-center text-2xl font-semibold">Entre em Contato Conosco</h2>
+        <p class="flex justify-center mt-2 text-lg">Tem alguma dúvida ou sugestão? Preencha o formulário abaixo.</p>
+        <div class="max-w-2xl mx-auto mt-8 bg-white p-8 shadow-lg rounded-2xl">
+          <form id="formContato" onsubmit="return validarForm()">
+            <div class="mb-4">
+              <label for="nome" class="block text-gray-700 font-bold mb-2">Nome:</label>
+              <input type="text" id="nome" name="nome" class="w-full p-2 border border-gray-300 rounded-lg" />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">E-mail:</label>
+              <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg" />
+            </div>
+            <div class="mb-4">
+              <label for="mensagem" class="block text-gray-700 font-bold mb-2">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                class="w-full p-2 border border-gray-300 rounded-lg"
+              ></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button type="submit" class="bg-[#F23030] text-white px-6 py-2 rounded-lg hover:bg-[#d62828]">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer class="bg-[#267365] text-white p-4 text-center">
+        <p>&copy; 2025 Explorando o Brasil. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="../script/formValidate.js"></script>
+    <script src="../script/menuIcon.js"></script>
+  </body>
+</html>

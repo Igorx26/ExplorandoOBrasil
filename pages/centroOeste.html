@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Região Centro-Oeste - Explorando o Brasil</title>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100 flex flex-col">
+      <header class="bg-[#267365] text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+          <h1 class="text-3xl font-bold">Explorando o Brasil</h1>
+
+          <div class="menuIcon cursor-pointer md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+
+          <nav class="navbar hidden md:block">
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <li class="mb-0 mr-0">
+                <a id="home" href="../index.html" class="hover:text-[#F2CB05]">Home</a>
+              </li>
+              <li>
+                <a id="norte" href="../pages/norte.html" class="hover:text-[#F2CB05]">Norte</a>
+              </li>
+              <li>
+                <a id="nordeste" href="../pages/nordeste.html" class="hover:text-[#F2CB05]">Nordeste</a>
+              </li>
+              <li>
+                <a id="centroOeste" href="../pages/centroOeste.html" class="hover:text-[#F2CB05] ativo">Centro-Oeste</a>
+              </li>
+              <li>
+                <a id="sudeste" href="./sudeste.html" class="hover:text-[#F2CB05]">Sudeste</a>
+              </li>
+              <li>
+                <a id="sul" href="./sul.html" class="hover:text-[#F2CB05]">Sul</a>
+              </li>
+              <li>
+                <a id="contato" href="../pages/contato.html" class="hover:text-[#F2CB05]">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="p-4">
+        <h2 class="flex justify-center my-6 text-2xl font-semibold">Destinos na Região Centro-Oeste</h2>
+
+        <p class="mt-2 text-lg">Explore três incríveis destinos na Região Centro-Oeste do Brasil.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-6">
+          <div class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img
+              src="../imgs/imgsCentroOeste/pantanal.jpg"
+              alt="Destino 1"
+              class="w-full h-48 object-cover rounded-t-2xl"
+            />
+            <h3 class="text-xl font-bold mt-4">Pantanal - Mato Grosso</h3>
+            <p class="mt-2 text-gray-600">
+              Amantes da natureza vão amar uma viagem ao Pantanal, onde é possível ter contato com uma enorme
+              biodiversidade. As atividades aqui incluem pescaria em rio, andar a cavalo e admirar onças-pintadas.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.hoteis.com/go/brasil/blog-top-destinos-de-turismo-de-aventura-no-centro-oeste"
+              class="inline-block mt-4 bg-[#F28705] text-white px-4 py-2 rounded-lg hover:bg-[#d62828]"
+            >
+              Saiba mais
+            </a>
+          </div>
+
+          <div class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img
+              src="../imgs/imgsCentroOeste/chapadaVeadeiros.jpg"
+              alt="Destino 1"
+              class="w-full h-48 object-cover rounded-t-2xl"
+            />
+            <h3 class="text-xl font-bold mt-4">Chapada dos Veadeiros - Goiás</h3>
+            <p class="mt-2 text-gray-600">
+              Rios de água cristalina, enormes paredões de pedra e grandes quedas d'água. Não à toa, a Chapada dos
+              Veadeiros merece seu lugar ao sol entre os melhores destinos para turismo de aventura no Brasil.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.hoteis.com/go/brasil/blog-top-destinos-de-turismo-de-aventura-no-centro-oeste"
+              class="inline-block mt-4 bg-[#F28705] text-white px-4 py-2 rounded-lg hover:bg-[#d62828]"
+            >
+              Saiba mais
+            </a>
+          </div>
+
+          <div class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img
+              src="../imgs/imgsCentroOeste/bonito.jpg"
+              alt="Destino 1"
+              class="w-full h-48 object-cover rounded-t-2xl"
+            />
+            <h3 class="text-xl font-bold mt-4">Bonito - Mato Grosso do Sul</h3>
+            <p class="mt-2 text-gray-600">
+              Com paisagens impactantes que incluem cachoeiras, rios e grutas, Bonito, no Mato Grosso do Sul, é um dos
+              destinos queridinhos para turismo no Centro-Oeste.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.hoteis.com/go/brasil/blog-top-destinos-de-turismo-de-aventura-no-centro-oeste"
+              class="inline-block mt-4 bg-[#F28705] text-white px-4 py-2 rounded-lg hover:bg-[#d62828]"
+            >
+              Saiba mais
+            </a>
+          </div>
+        </div>
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <img
+                src="../imgs/imgsCentroOeste/chapadaVeadeiros.jpg"
+                class="w-full h-full object-cover"
+                alt="Imagem 1"
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <img src="../imgs/imgsCentroOeste/pantanal.jpg" class="w-full h-full object-cover" alt="Imagem 2" />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+              <img src="../imgs/norteHomeImg.jpg" class="w-full h-full object-cover" alt="Imagem 3" />
+            </div>
+          </div>
+
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white group-hover:bg-gray-200 group-focus:ring-4 group-focus:ring-white"
+            >
+              <svg
+                class="w-4 h-4 text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white group-hover:bg-gray-200 group-focus:ring-4 group-focus:ring-white"
+            >
+              <svg
+                class="w-4 h-4 text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </main>
+
+      <footer class="bg-[#267365] text-white p-4 text-center mt-8">
+        <p>&copy; 2025 Explorando o Brasil. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="../script/menuIcon.js"></script>
+  </body>
+</html>

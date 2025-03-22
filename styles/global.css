@@ -1,0 +1,40 @@
+.ativo {
+  color: #f2cb05;
+  font-weight: bold;
+}
+
+.menuIcon {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #267365;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  .navbar.active {
+    display: block !important;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+}

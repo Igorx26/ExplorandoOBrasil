@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Explorando o Brasil</title>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100 flex flex-col">
+      <header class="bg-[#267365] text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+          <h1 class="text-3xl font-bold">Explorando o Brasil</h1>
+
+          <div class="menuIcon cursor-pointer md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+
+          <nav class="navbar hidden md:block">
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <li class="mb-0 mr-0">
+                <a href="./index.html" class="hover:text-[#F2CB05] ativo">Home</a>
+              </li>
+              <li>
+                <a id="norte" href="./pages/norte.html" class="hover:text-[#F2CB05]">Norte</a>
+              </li>
+              <li>
+                <a id="nordeste" href="./pages/nordeste.html" class="hover:text-[#F2CB05]">Nordeste</a>
+              </li>
+              <li>
+                <a id="centroOeste" href="./pages/centroOeste.html" class="hover:text-[#F2CB05]">Centro-Oeste</a>
+              </li>
+              <li>
+                <a id="sudeste" href="./pages/sudeste.html" class="hover:text-[#F2CB05]">Sudeste</a>
+              </li>
+              <li>
+                <a id="sul" href="./pages/sul.html" class="hover:text-[#F2CB05]">Sul</a>
+              </li>
+              <li>
+                <a id="contato" href="./pages/contato.html" class="hover:text-[#F2CB05]">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="mainContainer" class="p-4 flex-1 visible">
+        <h2 class="flex justify-center text-2xl font-semibold">Bem-vindo ao Explorando o Brasil!</h2>
+        <p class="flex justify-center mt-2 text-lg">
+          Descubra os melhores destinos de viagem em cada região do Brasil.
+        </p>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          <a href="./pages/norte.html" class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img src="./imgs/norteHomeImg.jpg" alt="Região Norte" class="w-full h-48 object-cover rounded-t-2xl" />
+            <h3 class="flex justify-center text-xl font-bold mt-4">Região Norte</h3>
+            <p class="flex justify-center mt-2 text-gray-600">Explorar a Amazônia e muito mais!</p>
+          </a>
+          <a href="./pages/nordeste.html" class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img
+              src="./imgs/nordesteHomeImg.png"
+              alt="Região Nordeste"
+              class="w-full h-48 object-cover rounded-t-2xl"
+            />
+            <h3 class="flex justify-center text-xl font-bold mt-4">Região Nordeste</h3>
+            <p class="flex justify-center mt-2 text-gray-600">Praias paradisíacas e cultura vibrante.</p>
+          </a>
+          <a href="./pages/centroOeste.html" class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img
+              src="./imgs/centroOesteHomeImg.jpg"
+              alt="Centro-Oeste"
+              class="w-full h-48 object-cover rounded-t-2xl"
+            />
+            <h3 class="flex justify-center text-xl font-bold mt-4">Centro-Oeste</h3>
+            <p class="flex justify-center mt-2 text-gray-600">Natureza exuberante e destinos históricos.</p>
+          </a>
+          <a href="./pages/sudeste.html" class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img src="./imgs/sudesteHomeImg.jpg" alt="Região Sudeste" class="w-full h-48 object-cover rounded-t-2xl" />
+            <h3 class="flex justify-center text-xl font-bold mt-4">Região Sudeste</h3>
+            <p class="flex justify-center mt-2 text-gray-600">Grandes metrópoles e praias icônicas.</p>
+          </a>
+          <a href="./pages/sul.html" class="bg-white p-4 shadow-lg rounded-2xl hover:shadow-2xl">
+            <img src="./imgs/sulHomeImg.jpg" alt="Região Sul" class="w-full h-48 object-cover rounded-t-2xl" />
+            <h3 class="flex justify-center text-xl font-bold mt-4">Região Sul</h3>
+            <p class="flex justify-center mt-2 text-gray-600">Paisagens deslumbrantes e cultura europeia.</p>
+          </a>
+        </section>
+
+        <section class="mt-12 bg-[#F29F05] text-white py-8 px-4 rounded-2xl shadow-lg">
+          <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold">Para mais informações, entre em contato!</h2>
+            <p class="mt-4 text-lg">
+              Tem dúvidas ou precisa de ajuda para planejar sua viagem? Nossa equipe está pronta para ajudar.
+            </p>
+            <a
+              href="./pages/contato.html"
+              class="inline-block mt-6 bg-[#F23030] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#d62828]"
+            >
+              Fale Conosco
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-[#267365] text-white p-4 text-center">
+        <p>&copy; 2025 Explorando o Brasil. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="./script/menuIcon.js"></script>
+  </body>
+</html>
